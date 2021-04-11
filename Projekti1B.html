@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Projekti1B.css">
+</head>
+<body>
+    <div class="container"> 
+        <form name="lomake" onsubmit="return tarkasta(this)" onreset="return tyhjenna(this)";>
+            <h1 id="osikko"> Kanta-asiakassopimus </h1><hr>
+            <p> Täytä alla oleva lomake, ja liity Motonetin kanta-asiakkaaksi!</p>
+            <p style="color: crimson;"> Pakolliset kentät on merkitty *-merkillä.</p>
+            <table>
+                <tr>
+                  <td align="right">Etunimi:*</td>
+                  <td align="left"><input name="etunimi" type="text" placeholder="Lintu"></td>
+                </tr>
+                <tr>
+                  <td align="right">Sukunimi:*</td>
+                  <td align="left"><input name="sukunimi" type="text" placeholder="Perhonen"></td>
+                </tr>
+                <tr>
+                  <td align="right">Ikäsi:*</td>
+                  <td align="left">
+                    <select name="ika">
+                        <option value="">Valitse sinun ikäryhmäsi </option>
+                        <option value="18-25"> 18-25 vuotias</option>
+                        <option value="26-40"> 26-40 vuotias</option>
+                        <option value="40-60"> 40-60 vuotias</option>
+                        <option value="yli 60"> Yli 60 vuotias</option>
+                    </select>
+                </td>
+                </tr>
+                <tr>
+                    <td align="right">Lähiosoite:*</td>
+                    <td align="left"><input name="osoite" type="text" placeholder="Keravatie 12"></td>
+                </tr>
+                <tr>
+                    <td align="right">Postinumero:*</td>
+                    <td align="left"><input name="postinumero" type="number" placeholder="01234"></td>
+                </tr>
+                <tr>
+                    <td align="right">Postitoimipaikka:*</td>
+                    <td align="left"><input name="paikka" type="text" placeholder="Kerava"></td>
+                </tr>
+                <tr>
+                    <td align="right">Matkapuhelinnumero:*</td>
+                    <td align="left"><input name="puh" type="number" placeholder="040836951"></td>
+                </tr>
+                <tr>
+                    <td align="right">Sähköpostiosoite:*</td>
+                    <td align="left"><input name="email" type="email" placeholder="Lintu.perhonen@edu.com"></td>
+                </tr>
+                <tr>
+                    <td align="right">Sukupuoli:*</td>
+                    <td align="left" style="width: 65%;">
+                        <input class="radio" name="sukupuoli" type="radio" value="mies">Mies
+                        <input class="radio" name="sukupuoli" type="radio" value="nainen">Nainen
+                        <input class="radio" name="sukupuoli" type="radio" value="non">En halua ilmoittaa
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">Miksi kanta-asiakkaaksi:*</td>
+                    <td align="left"><textarea name="content">Alennus </textarea> </td>
+                </tr>
+            </table> 
+            <p>
+                <input type="submit" name="submit" value="Tarkasta lomake" style="width: 45%;">
+                <input type="reset" name="reset" value="Tyhjennä lomake" style="width: 45%;">
+              </p>           
+        </form>
+    </div>
+</body>
+<script src="Projekti1B.js"></script>
+</html>

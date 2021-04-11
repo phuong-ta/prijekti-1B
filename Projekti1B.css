@@ -1,0 +1,30 @@
+body {
+    text-align: center;
+    background-color: sienna;
+}
+form{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 500px;
+    border: 2px solid salmon;
+    border-radius: 7%;
+    background-color: silver;
+}
+textarea{
+    width: 100%;
+}
+
+select{
+    width: 103%;
+}
+input{
+    width: 100%;
+}
+input.radio{
+    width: 5%;
+    
+}
+td{
+    padding-bottom: 10px;;
+}
